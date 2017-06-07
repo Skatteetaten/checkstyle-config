@@ -3,7 +3,7 @@
 
 	<groupId>no.skatteetaten.aurora.checkstyle</groupId>
 	<artifactId>checkstyle-config</artifactId>
-	<version>0.8</version>
+	<version>0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>checkstyle-config</name>
@@ -42,6 +42,15 @@
 		</snapshotRepository>
 	</distributionManagement>
 	<build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>no.skatteetaten.aurora.maven.plugins</groupId>
+          <artifactId>aurora-cd</artifactId>
+          <version>2.0.3</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
