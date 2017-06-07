@@ -10,7 +10,6 @@ def overrides = [
     disableAllReports: true,
     sonarQube: false,
     piTests: false,
-    skipOpenShiftBuild: true,
     credentialsId: "github_bjartek",
     deployTo: 'maven-central'
 ]
