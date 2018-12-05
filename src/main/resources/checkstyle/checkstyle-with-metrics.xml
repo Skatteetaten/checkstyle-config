@@ -62,12 +62,6 @@
         <property name="message" value="Line has trailing spaces."/>
     </module>
 
-
-    <module name="SuppressWithNearbyCommentFilter">
-        <property name="commentFormat" value="CHECKSTYLE:DISABLE (\d+)"/>
-        <property name="influenceFormat" value="$1"/>
-    </module>
-
     <module name="FileTabCharacter">
         <property name="eachLine" value="true"/>
     </module>
@@ -75,7 +69,11 @@
     <module name="SuppressWarningsFilter"/>
 
     <module name="TreeWalker">
-        <module name="FileContentsHolder"/>
+      <module name="SuppressWithNearbyCommentFilter">
+        <property name="commentFormat" value="CHECKSTYLE:DISABLE (\d+)"/>
+        <property name="influenceFormat" value="$1"/>
+      </module>
+
         <module name="Indentation">
             <property name="caseIndent" value="0"/>
             <property name="throwsIndent" value="4"/>
