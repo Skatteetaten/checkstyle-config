@@ -3,7 +3,7 @@
 
 	<groupId>no.skatteetaten.aurora.checkstyle</groupId>
 	<artifactId>checkstyle-config</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>AOS_EHA-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>checkstyle-config</name>
