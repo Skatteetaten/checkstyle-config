@@ -77,6 +77,7 @@
         <module name="Indentation">
             <property name="caseIndent" value="0"/>
             <property name="throwsIndent" value="4"/>
+            <property name="lineWrappingIndentation" value="0"/>
         </module>
         <property name="tabWidth" value="4"/>
 
