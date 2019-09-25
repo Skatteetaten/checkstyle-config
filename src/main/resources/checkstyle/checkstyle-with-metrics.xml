@@ -4,7 +4,7 @@
         "configuration_1_3.dtd">
 <!--
 
-   configuration that checks the sun coding conventions from:
+   Checkstyle configuration that checks the sun coding conventions from:
 
     - the Java Language Specification at
       http://java.sun.com/docs/books/jls/second_edition/html/index.html
@@ -77,7 +77,7 @@
         <module name="Indentation">
             <property name="caseIndent" value="0"/>
             <property name="throwsIndent" value="4"/>
-            <property name="lineWrappingIndentation" value="0"/>
+            <property name="lineWrappingIndentation" value="4"/>
         </module>
         <property name="tabWidth" value="4"/>
 
@@ -94,8 +94,7 @@
         <module name="MethodName"/>
         <module name="PackageName"/>
         <module name="ParameterName"/>
-        <module name="StaticVariableName">
-        </module>
+        <module name="StaticVariableName"/>
         <module name="TypeName"/>
         <module name="SuppressWarningsHolder"/>
 
