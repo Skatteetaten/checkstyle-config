@@ -48,6 +48,7 @@
   <module name="FileLength" />
 
   <module name="LineLength">
+    <property name="fileExtensions" value="java, json, xml, groovy"/>
     <property name="max" value="120" />
     <property name="ignorePattern" value="^import" />
   </module>
