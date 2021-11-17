@@ -8,6 +8,7 @@ def overrides = [
     scriptVersion  : 'v7',
     javaVersion: '11',
     pipelineScript: 'https://git.aurora.skead.no/scm/ao/aurora-pipeline-scripts.git',
+    iqOrganizationName: "Team AOS",
     versionStrategy: [
         [branch: 'master', versionHint: '2']
     ]
