@@ -88,16 +88,32 @@
     <!-- Checks for Naming Conventions.                  -->
     <!-- See http://checkstyle.sf.net/config_naming.html -->
     <module name="ConstantName">
-      <property name="format" value="^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$|logger" />
+      <property name="format" value="^[A-ZÆØÅ][A-ZÆØÅ0-9]*(_[A-ZÆØÅ0-9]+)*$|logger" />
     </module>
-    <module name="LocalFinalVariableName" />
-    <module name="LocalVariableName" />
-    <module name="MemberName" />
-    <module name="MethodName" />
-    <module name="PackageName" />
-    <module name="ParameterName" />
-    <module name="StaticVariableName" />
-    <module name="TypeName" />
+    <module name="LocalFinalVariableName">
+      <property name="format" value="^[a-zæøå][a-zæøåA-ZÆØÅ0-9]*$" />
+    </module>
+    <module name="LocalVariableName">
+      <property name="format" value="^[a-zæøå][a-zæøåA-ZÆØÅ0-9]*$" />
+    </module>
+    <module name="MemberName">
+      <property name="format" value="^[a-zæøå][a-zæøåA-ZÆØÅ0-9]*$" />
+    </module>
+    <module name="MethodName">
+      <property name="format" value="^[a-zæøå][a-zæøåA-ZÆØÅ0-9]*$" />
+    </module>
+    <module name="PackageName">
+      <property name="format" value="^[a-zæøå]+(\.[a-zæøåA-ZÆØÅ_][a-zæøåA-ZÆØÅ0-9_]*)*$" />
+    </module>
+    <module name="ParameterName">
+       <property name="format" value="^[a-zæøå][a-zæøåA-ZÆØÅ0-9]*$" />
+    </module>
+    <module name="StaticVariableName" >
+       <property name="format" value="^[a-zæøå][a-zæøåA-ZÆØÅ0-9]*$" />
+    </module>
+    <module name="TypeName">
+       <property name="format" value="^[A-ZÆØÅ][a-zæøåA-ZÆØÅ0-9]*$" />
+    </module>
     <module name="SuppressWarningsHolder" />
 
     <!-- Checks for Headers                                -->
